@@ -1,4 +1,4 @@
-##📚 Cursos - Alura
+## 📚 Cursos - Alura
 
 Aqui estáo todos os cursos que estou fazendo na Alura.
 
