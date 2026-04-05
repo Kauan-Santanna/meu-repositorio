@@ -1,0 +1,112 @@
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card {
+  color: var(--text-secondary-color);
+  background-color: black;
+  width: 312px;
+  height: 288px;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.card header {
+  display: block;
+  background-color: transparent;
+  position: static;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.card header p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+}
+
+.card header h3 {
+  font-size: 40px;
+  font-weight: var(--title-weight);
+  margin: 8px 0 0;
+}
+
+.card header span {
+  font-size: 32px;
+  margin-top: 24px;
+  display: inline-block;
+}
+
+.card.japao {
+  background: url(../assets/bg-card-japao-mobile.png) no-repeat;
+}
+
+.card.san-andreas {
+  background: url(../assets/bg-card-san-andreas-mobile.png) no-repeat;
+}
+
+.card.paraiba {
+  background: url(../assets/bg-card-paraiba-mobile.png) no-repeat;
+}
+
+.card.manaus {
+  background: url(../assets/bg-card-manaus-mobile.png) no-repeat;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 420px;
+    height: 308px;
+  }
+
+  .card header h3 {
+    font-size: 48px;
+  }
+
+  .card header span {
+    font-size: 40px;
+  }
+
+  .card.japao {
+    background: url(../assets/bg-card-japao-desktop.jpg) no-repeat;
+  }
+
+  .card.san-andreas {
+    background: url(../assets/bg-card-san-andreas-desktop.png) no-repeat;
+  }
+
+  .card.paraiba {
+    background: url(../assets/bg-card-paraiba-desktop.png) no-repeat;
+  }
+
+  .card.manaus {
+    background: url(../assets/bg-card-manaus-desktop.png) no-repeat;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 588px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
+  }
+}
