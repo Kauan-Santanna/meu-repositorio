@@ -1,78 +1,117 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Jornada Viagens</title>
-  </head>
-  <body>
-    <header>
-      <a class="logo" href="index.html" title="Voltar para a página inicial">
-        <img
-          class="img-mobile"
-          src="assets/bussula-jornada-branca.png"
-          alt="Bussola do logo Jornada Viagens na cor branca"
-        />
-        <img
-          class="img-desktop"
-          src="assets/bussula-texto-jornada-branca.png"
-          alt="Logo Jornada Viagens na cor branca"
-        />
-      </a>
-      <div class="menu-hamburguer">
-        <label for="menu">
-          <img src="assets/menu-hamburguer.png" alt="Menu" />
-        </label>
-        <input type="checkbox" id="menu" hidden />
-        <nav>
-          <ul class="list-link">
-            <li><a href="blog.html" target="_blank" title="Acessar Blog">Blog</a></li>
-            <li><a href="pacotes.html" target="_blank" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>
-            <li><a href="contato.html" target="_blank" title="Acessar Contato">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="hero">
-      <div class="hero-img"></div>
-      <h2>
-        Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades, cuidamos de
-        todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!
-      </h2>
-    </section>
 
-    <!-- Offers -->
-    <section class="offers">
-      <div class="section-title">
-        <h2>Ofertas da Semana</h2>
-        <hr />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Jornada Viagens</title>
+</head>
 
-      <div class="offers-cards">
-        <article class="card">
-          <header>
-            <p>HOTEL+AÉREO</p>
-            <h3>
-              Japão <br> 
-              <span>R$ 4000</span>
-            </h3>
-          </header>
-          <footer>
-            <a href="#" class="button">Ver detalhes</a>
-          </footer>
-        </article>
-      </div>
-    </section>
+<body>
+  <header>
+    <a class="logo" href="index.html" title="Voltar para a página inicial">
+      <img class="img-mobile" src="assets/bussula-jornada-branca.png"
+        alt="Bussola do logo Jornada Viagens na cor branca" />
+      <img class="img-desktop" src="assets/bussula-texto-jornada-branca.png" alt="Logo Jornada Viagens na cor branca" />
+    </a>
+    <div class="menu-hamburguer">
+      <label for="menu">
+        <img src="assets/menu-hamburguer.png" alt="Menu" />
+      </label>
+      <input type="checkbox" id="menu" hidden />
+      <nav>
+        <ul class="list-link">
+          <li><a href="blog.html" target="_blank" title="Acessar Blog">Blog</a></li>
+          <li><a href="pacotes.html" target="_blank" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>
+          <li><a href="contato.html" target="_blank" title="Acessar Contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-img"></div>
+    <h2>
+      Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades, cuidamos de
+      todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!
+    </h2>
+  </section>
 
-    <!-- Categorias -->
-    <!-- <section class="categories">
+  <!-- Offers -->
+  <section class="offers">
+    <div class="section-title">
+      <h2>Ofertas da Semana</h2>
+      <hr />
+    </div>
+
+    <div class="offers-cards">
+      <!-- CARD JAPÃO -->
+      <article class="card japao">
+        <header>
+          <p>HOTEL+AÉREO</p>
+          <h3>
+            Japão <br>
+            <span>R$ 4000</span>
+          </h3>
+        </header>
+        <footer>
+          <a href="#" class="button">Ver detalhes</a>
+        </footer>
+      </article>
+
+      <!-- CARD SAN ANDREAS -->
+      <article class="card san-andreas">
+        <header>
+          <p>HOTEL+AÉREO</p>
+          <h3>
+            San Andreas <br>
+            <span>R$ 3000</span>
+          </h3>
+        </header>
+        <footer>
+          <a href="#" class="button">Ver detalhes</a>
+        </footer>
+      </article>
+
+      <!-- CARD PARAIBA -->
+      <article class="card paraiba">
+        <header>
+          <p>HOTEL+AÉREO</p>
+          <h3>
+            Paraíba <br>
+            <span>R$ 1200</span>
+          </h3>
+        </header>
+        <footer>
+          <a href="#" class="button">Ver detalhes</a>
+        </footer>
+      </article>
+
+      <!-- CARD MANAUS -->
+      <article class="card manaus">
+        <header>
+          <p>HOTEL+AÉREO</p>
+          <h3>
+            Manaus <br>
+            <span>R$ 1600</span>
+          </h3>
+        </header>
+        <footer>
+          <a href="#" class="button">Ver detalhes</a>
+        </footer>
+      </article>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <!-- <section class="categories">
       <div class="section-title">
         <h2>
           Busque por Categoria
         </h2>
         <hr />
       </div> -->
-    </section>
-  </body>
+  </section>
+</body>
+
 </html>
