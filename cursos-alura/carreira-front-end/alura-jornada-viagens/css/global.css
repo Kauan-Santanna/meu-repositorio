@@ -74,6 +74,7 @@ body {
   }
 }
 
+/* DESKTOP */
 @media screen and (min-width: 1024px) {
   .button:hover {
     background-color: var(--primary-color);
