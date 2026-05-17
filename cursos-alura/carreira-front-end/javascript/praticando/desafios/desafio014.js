@@ -1,19 +1,21 @@
-console.log("=-".repeat(15))
-console.log("Conversão de nota em conceito")
-console.log("=-".repeat(15))
+// Crie uma variável nota entre 0 e 10. Use if/else if/else para retornar: A (9-10), B (8-9), C (6-7.9), D (4-5.9), E (0-3.9).
 
-const nota = 2
+console.log("=-".repeat(15));
+console.log("Conversão de nota em conceito");
+console.log("=-".repeat(15));
+
+const nota = 2;
 
 if (nota <= 10 && nota >= 9) {
-    console.log("Categoria A.")
+  console.log("Categoria A.");
 } else if (nota < 9 && nota >= 8) {
-    console.log("Categoria B.")
+  console.log("Categoria B.");
 } else if (nota < 8 && nota >= 6) {
-    console.log("Categoria C.")
+  console.log("Categoria C.");
 } else if (nota < 6 && nota >= 4) {
-    console.log("Categoria D.")
+  console.log("Categoria D.");
 } else {
-    console.log("Categoria E.")
+  console.log("Categoria E.");
 }
 
-console.log("=-".repeat(6))
+console.log("=-".repeat(6));
