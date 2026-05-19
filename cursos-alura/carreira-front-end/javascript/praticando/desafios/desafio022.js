@@ -11,3 +11,4 @@ for (let numero = 1; numero <= 100; numero++) {
 }
 
 console.log(`Somando os números de 1 a 100, o resultado vai ser: ${soma}`)
+console.log("=-".repeat(28))
