@@ -1,50 +1,97 @@
 const readline = require("readline");
+const chalk = require("chalk").default;
 
 const quiz = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-console.log("Bem-vindo(a) ao Quiz de JavaScript!");
-console.log("Responda com a letra correta: A, B ou C\n");
+console.log(chalk.white("=-".repeat(20)));
+console.log(chalk.cyan("Bem-vindo(a) ao Quiz de JavaScript!"));
+console.log(chalk.cyan("Responda com a letra correta: A, B ou C"));
+console.log(chalk.white("=-".repeat(20)));
 
 let acertos = 0;
 
-quiz.question("1 - Qual palavra usamos para criar uma função?\n(A) Define\n(B) Function\n(C) Create\n>", (resposta1) => {
+quiz.question(
+  chalk.white("1 - ") +
+    chalk.cyan("Qual palavra usamos para criar uma função?\n") +
+    chalk.white("\n(A) - ") +
+    chalk.cyan("define\n") +
+    chalk.white("(B) - ") +
+    chalk.cyan("function\n") +
+    chalk.white("(C) - ") +
+    chalk.cyan("create\n") +
+    chalk.cyan("\nResposta: "),
+  (resposta1) => {
     // TODO: incrementar acertos se respondeu corretamente
     if (resposta1 === "b") {
-      console.log("Parabéns! você acertou a resposta.");
-      acertos++
+      console.log(chalk.green("\nParabéns! ") + chalk.cyan("você acertou a resposta."));
+      console.log(chalk.white("=-".repeat(20)));
+      acertos++;
     } else {
-      console.log("Que pena! a resposta certa era 'B'.");
+      console.log(chalk.red("Você errou! ") + chalk.cyan("a resposta certa era 'B'."));
+      console.log(chalk.white("=-".repeat(20)));
     }
 
-    quiz.question("2 - Qual dessas é uma estrutura de repetição?\n(A) Loopar\n(B) Repeat\n(C) For\n>", (resposta2) => {
-      // TODO: incrementar acertos se respondeu corretamente
-      if (resposta2 === "c") {
-        console.log("Parabéns! você acertou a resposta.");
-        acertos++;
-      } else {
-        console.log("Que pena! a resposta certa era 'C'.");
-      }
-
-      quiz.question("3 - Qual valor é considerado falsy em JavaScript?\n(A) 1\n(B) 0\n(C) 'Texto'\n> ", (resposta3) => {
+    quiz.question(
+      chalk.white("2 - ") +
+        chalk.cyan("Qual dessas é uma estrutura de repetição?\n") +
+        chalk.white("\n(A) - ") +
+        chalk.cyan("loopar()\n") +
+        chalk.white("(B) - ") +
+        chalk.cyan("repeat\n") +
+        chalk.white("(C) - ") +
+        chalk.cyan("for\n") +
+        chalk.cyan("\nResposta: "),
+      (resposta2) => {
         // TODO: incrementar acertos se respondeu corretamente
-        if (resposta3 === "b") {
-          console.log("Parabéns! você acertou a resposta.");
+        if (resposta2 === "c") {
+          console.log(chalk.green("\nParabéns! ") + chalk.cyan("você acertou a resposta."));
+          console.log(chalk.white("=-".repeat(20)));
           acertos++;
         } else {
-          console.log("Que pena! a resposta certa era 'B'.");
+          console.log(chalk.red("Você errou! ") + chalk.cyan("a resposta certa era 'C'."));
+          console.log(chalk.white("=-".repeat(20)));
         }
 
-        console.log(`Você acertou ${acertos} de 3 perguntas`)
-        // TODO:
-        // se acertou tudo, dar os parabéns.
-        // se acertou somente 2, muito bom! continue assim!
-        // se não acertou nenhuma, continue praticando
+        quiz.question(
+          chalk.white("3 - ") +
+            chalk.cyan("Qual valor é considerado falsy em JavaScript?\n") +
+            chalk.white("\n(A) - ") +
+            chalk.cyan("1\n") +
+            chalk.white("(B) - ") +
+            chalk.cyan("0\n") +
+            chalk.white("(C) - ") +
+            chalk.cyan("'texto'\n") +
+            chalk.cyan("\nResposta: "),
+          (resposta3) => {
+            // TODO: incrementar acertos se respondeu corretamente
+            if (resposta3 === "b") {
+              console.log(chalk.green("\nParabéns! ") + chalk.cyan("você acertou a resposta."));
+              console.log(chalk.white("=-".repeat(20)));
+              acertos++;
+            } else {
+              console.log(chalk.red("Você errou! ") + chalk.cyan("a resposta certa era 'B'."));
+              console.log(chalk.white("=-".repeat(20)));
+            }
 
-        quiz.close();
-      });
-    });
+            console.log(
+              chalk.cyan("Você acertou ") +
+                chalk.white(`${acertos} `) +
+                chalk.cyan("de ") +
+                chalk.white("3 ") +
+                chalk.cyan("perguntas."),
+            );
+            // TODO:
+            // se acertou tudo, dar os parabéns.
+            // se acertou somente 2, muito bom! continue assim!
+            // se não acertou nenhuma, continue praticando
+
+            quiz.close();
+          },
+        );
+      },
+    );
   },
 );
