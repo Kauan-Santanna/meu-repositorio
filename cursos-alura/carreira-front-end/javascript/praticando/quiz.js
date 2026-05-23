@@ -25,7 +25,7 @@ quiz.question(
     chalk.cyan("\nResposta: "),
   (resposta1) => {
     // TODO: incrementar acertos se respondeu corretamente
-    if (resposta1 === "b") {
+    if (resposta1.toLowerCase() === "b") {
       console.log(chalk.green("\nParabéns! ") + chalk.cyan("você acertou a resposta."));
       console.log(chalk.white("=-".repeat(20)));
       acertos++;
@@ -46,7 +46,7 @@ quiz.question(
         chalk.cyan("\nResposta: "),
       (resposta2) => {
         // TODO: incrementar acertos se respondeu corretamente
-        if (resposta2 === "c") {
+        if (resposta2.toLowerCase() === "c") {
           console.log(chalk.green("\nParabéns! ") + chalk.cyan("você acertou a resposta."));
           console.log(chalk.white("=-".repeat(20)));
           acertos++;
@@ -67,7 +67,7 @@ quiz.question(
             chalk.cyan("\nResposta: "),
           (resposta3) => {
             // TODO: incrementar acertos se respondeu corretamente
-            if (resposta3 === "b") {
+            if (resposta3.toLowerCase() === "b") {
               console.log(chalk.green("\nParabéns! ") + chalk.cyan("você acertou a resposta."));
               console.log(chalk.white("=-".repeat(20)));
               acertos++;
