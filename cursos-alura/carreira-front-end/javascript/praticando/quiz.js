@@ -83,11 +83,6 @@ quiz.question(
                 chalk.white("3 ") +
                 chalk.cyan("perguntas."),
             );
-            // TODO:
-            // se acertou tudo, dar os parabéns.
-            // se acertou somente 2, muito bom! continue assim!
-            // se não acertou nenhuma, continue praticando
-
             quiz.close();
           },
         );
