@@ -6,16 +6,40 @@ const pessoa = {
 
 pessoa.sobrenome = "Santanna";
 
-console.log("Nome:", pessoa.nome);
-console.log("Sobrenome:", pessoa.sobrenome);
+// console.log("Nome:", pessoa.nome);
+// console.log("Sobrenome:", pessoa.sobrenome);
 
 const livro = {
   titulo: "O Hobbit",
-  autor: "J. R. R. Tolkien",
   paginas: 310,
 };
 
-livro.publicado = true
-livro.idiomas = [
-    "Ingles", "Frances", "Portugues", "Espanhol"
-]
+livro.publicado = true;
+livro.idiomas = ["Ingles", "Frances", "Portugues", "Espanhol"];
+
+console.log("Livro antes:", livro);
+
+livro.idiomas.push("Mandarim");
+
+delete livro.paginas;
+
+console.log("Livro depois:", livro);
+
+console.log("Autor do livro:", livro["autor"]);
+console.log("Autor do livro:", livro.autor);
+
+const autor = {
+  nome: "J. R. R. Tolkien",
+  nacionalidade: "Britanico",
+  idade: 98,
+  livros: [livro],
+};
+
+console.log("Autor", autor);
+
+livro.autor = autor;
+
+console.log(livro);
+
+livro.autor.nome;
+livro.autor.nacionalidade;
