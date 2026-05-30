@@ -1,8 +1,8 @@
-// Acesse e exiba o valor da propriedade "nome" no console. 
+// Acesse e exiba o valor da propriedade "nome" no console.
 
-console.log("=-".repeat(11))
-console.log("Acessando propriedades")
-console.log("=-".repeat(11))
+console.log("=-".repeat(11));
+console.log("Acessando propriedades");
+console.log("=-".repeat(11));
 
 const pessoal = {
   nome: "Kauan",
