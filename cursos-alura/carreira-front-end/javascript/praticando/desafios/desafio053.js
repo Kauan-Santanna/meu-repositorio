@@ -1,4 +1,4 @@
-// Modifique a propriedade "idade" com um novo valor. 
+// Modifique a propriedade "idade" com um novo valor.
 
 console.log("=-".repeat(10));
 console.log("Atualizando valores");
@@ -10,7 +10,7 @@ const pessoal = {
   profissao: "Assistente de P&D",
 };
 
-pessoal.idade = 22
+pessoal.idade = 22;
 
-console.log("Nova idade:", pessoal.idade)
-console.log("=-".repeat(7))
+console.log("Nova idade:", pessoal.idade);
+console.log("=-".repeat(7));
