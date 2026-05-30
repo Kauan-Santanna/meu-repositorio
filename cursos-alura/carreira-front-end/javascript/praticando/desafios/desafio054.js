@@ -1,4 +1,4 @@
-// Adicione ao objeto uma nova propriedade chamada "cidade".
+// Adicione ao objeto uma nova propriedade chamada "estado".
 
 console.log("=-".repeat(16));
 console.log("Adicionando uma nova propriedade");
@@ -10,7 +10,7 @@ const pessoal = {
   profissao: "Assistente de P&D",
 };
 
-pessoal.cidade = "Santa Catarina"
+pessoal.estado = "Santa Catarina";
 
-console.log("Nova propriedade adicionada:", pessoal.cidade)
-console.log("=-".repeat(22))
+console.log("Nova propriedade adicionada:", pessoal.estado);
+console.log("=-".repeat(22));
