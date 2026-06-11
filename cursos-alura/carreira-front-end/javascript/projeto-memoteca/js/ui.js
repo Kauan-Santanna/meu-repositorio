@@ -49,7 +49,7 @@ const ui = {
     const iconeEditar = document.createElement("img");
     iconeEditar.src = "assets/imagens/icone-editar.png";
     iconeEditar.alt = "Editar";
-    botaoEditar.appendChild(IconeEditar);
+    botaoEditar.appendChild(iconeEditar);
 
     const icones = document.createElement("div");
     icones.classList.add("icones");

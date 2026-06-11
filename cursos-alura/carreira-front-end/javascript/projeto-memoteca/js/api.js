@@ -3,7 +3,7 @@ const api = {
     try {
       const response = await fetch("http://localhost:3000/pensamentos");
       return await response.json();
-    } catch {
+    } catch (error) {
       alert("Erro ao buscar pensamentos");
       throw error;
     }
@@ -29,8 +29,8 @@ const api = {
     try {
       const response = await fetch(`http://localhost:3000/pensamentos/${id}`);
       return await response.json();
-    } catch {
-     alert("Erro ao buscar pensamento");
+    } catch (error) {
+      alert("Erro ao buscar pensamento");
       throw error;
     }
   },
@@ -50,7 +50,6 @@ const api = {
       throw error;
     }
   },
-
-}
+};
 
 export default api;
